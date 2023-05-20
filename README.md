@@ -1,6 +1,8 @@
-# 🚀 Welcome to your new awesome project!
+# 🚀 Welcome to RetroDungeon!
 
-This project has been created using **webpack-cli**, you can now run
+This project has been created using **webpack-cli**.
+
+
 
 ```
 npm run build
@@ -12,4 +14,4 @@ or
 yarn build
 ```
 
-to bundle your application
+to bundle the application.
