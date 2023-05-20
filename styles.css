@@ -1,3 +1,5 @@
+@import "node_modules/pixel-borders/src/styles/pixel-borders.scss";
+
 @charset "UTF-8";
 .pixel-borders {
   position: relative;
@@ -6,7 +8,7 @@
   padding: 15px 20px;
   background-color: #fff;
   font-family: "Press Start 2P", Arial Black, Arial Bold, Arial, sans-serif;
-}
+};
 
 .pixel-borders--1 {
   border-style: solid;
@@ -17,6 +19,7 @@
   border-image-outset: 0;
   border-image-source: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='6' height='6'><path d='M0 2h2v2H0zM2 0h2v2H2zM4 2h2v2H4zM2 4h2v2H2z' fill='%23000' /></svg>");
 }
+
 @supports (border-image-source: none) {
   .pixel-borders--1 {
     border-radius: 14px;
@@ -141,7 +144,7 @@
   border-image-outset: 0;
   border-image-source: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='6' height='6'><path d='M0 2h2v2H0zM2 0h2v2H2zM4 2h2v2H4zM2 4h2v2H2z' fill='%230c639c' /></svg>");
   position: relative;
-  background-color: #209cee;
+  background-color: lightgray;
 }
 @supports (border-image-source: none) {
   .pixel-box--primary {
@@ -293,7 +296,7 @@
   border-image-width: 1;
   border-image-outset: 0;
   border-image-source: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='6' height='6'><path d='M0 2h2v2H0zM2 0h2v2H2zM4 2h2v2H4zM2 4h2v2H2z' fill='%230c639c' /></svg>");
-  background-color: #209cee;
+  background-color:lightgray;
 }
 @supports (border-image-source: none) {
   .pixel-box--primary-custom {
@@ -301,7 +304,7 @@
   }
 }
 .pixel-box--primary-custom:hover, .pixel-box--primary-custom:focus {
-  background-color: #1190e3;
+  background-color: lightgray;
 }
 
 .pixel-box--success-custom {
@@ -397,8 +400,7 @@
 }
 
 :root {
-  --pixel-bg: lightblue;
-  /* ↑ Inner background color */
+  --pixel-bg: lightgray; /* ↑ Inner background color */
   --pixel-border: black;
   /* ↑ Inner border color */
   --pixel-border-2: white;
@@ -419,7 +421,22 @@ body {
   background-color: darkblue;
 }
 
+header{
+ display : flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+
+}
+ 
+h1 {
+  font-family: 'Rajdhani', sans-serif;
+  color: white;
+}
+
+
 #text {
+  font-family: 'Rajdhani', sans-serif;
   background-color: black;
   color: white;
   padding: 10px;
@@ -430,7 +447,7 @@ body {
   max-height: 400px;
   background-color: lightgray;
   color: white;
-  margin: 0 auto;
+  margin: 10px;
   padding: 10px;
 }
 
