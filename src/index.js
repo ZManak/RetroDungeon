@@ -7,35 +7,27 @@ class Player {
   damage = 0;
   inventory = [];
 
-  attack(target) { 
-    target.hp =- player.attack - target.defense;
-};
+  attack(target) {
+    target.hp = -player.attack - target.defense;
+  }
+}
 
-};
+class warrior extends Player {}
 
-class warrior extends Player {
-  
-    
-  };
-  
 class enemy {
   constructor(hp, damage, defense, goldDrop, xpDrop, loot) {
     hp = this.hp;
     this.damage = damage;
     this.defense = defense;
-    
-    }
+  }
   attack(target) {
-     target.hp -= this.damage;
-    console.log(`Did ${this.damage}`)
-    
-    
-  };
+    target.hp -= this.damage;
+    console.log(`Did ${this.damage}`);
+  }
+}
 
-};
-
-const p1 = new Player;
-const goblin = new enemy (10, 3, 0, 30, 5, []);
+const p1 = new Player();
+const goblin = new enemy(10, 3, 0, 30, 5, []);
 
 goblin.attack(p1);
 
